@@ -42,10 +42,7 @@ export async function createTopic(
     name: formData.get('name'),
     description: formData.get('description'),
   });
-  // const name = formData.get('name');
-  // const description = formData.get('description');
 
-  // console.log(`Name: ${name} Description: ${description}`);
   if (!result.success) {
     return {
       errors: result.error.flatten().fieldErrors,
