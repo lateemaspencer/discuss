@@ -2,13 +2,13 @@ const paths = {
   homePage() {
     return '/';
   },
-  topicShowPath(topicSlug: string) {
+  topicShow(topicSlug: string) {
     return `/topics/${topicSlug}`;
   },
-  postCreatePath(topicSlug: string) {
+  postCreate(topicSlug: string) {
     return `/topics/${topicSlug}/posts/new`;
   },
-  postShowPath(topicSlug: string, postId: string) {
+  postShow(topicSlug: string, postId: string) {
     return `/topics/${topicSlug}/posts/${postId}`;
   },
 };
